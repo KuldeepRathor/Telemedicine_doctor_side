@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Terna Telemedicine Doctor',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
       home: BottomNavBar(),

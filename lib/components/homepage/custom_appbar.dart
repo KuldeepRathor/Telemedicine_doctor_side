@@ -27,13 +27,13 @@ class CustomAppbar extends StatelessWidget {
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
                   Text(
-                    'Kuldeep Rathor',
+                    'Dr.Kuldeep Rathor',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 22,
                     ),
                   ),
-                  Text('Find your suitable Doctor Here'),
+                  //Text('Find your suitable Doctor Here'),
                 ],),
             ],
           ),

@@ -25,9 +25,7 @@ class HomePage extends StatelessWidget {
               ),
               CustomAppbar(),
               // SearchBar(),
-              DoctorSlider(),
-              Specialist(),
-              AvailableDoctors()
+
             ],
           ),
         ),

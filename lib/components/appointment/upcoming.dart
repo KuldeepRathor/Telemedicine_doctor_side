@@ -8,67 +8,69 @@ class UPCOMING extends StatefulWidget {
 class _UPCOMINGState extends State<UPCOMING> {
   Widget upcomincard() {
     return Card(
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(25.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    CircleAvatar(),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        //crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const[
+                          Text('Patient name'),
+                          Text('Patsy J. Padilla'),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const[
                     Text('Date:'),
-                    Text('03 August 2021 '),
-                  ],
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const[
-                    Text('Time:'),
-                    Text('12:25PM'),
-                  ],
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const[
-                    Text('Doctor:'),
-                    Text('Dr.Patsy J.Padila'),
+                    Text('13/9/2022'),
                   ],
                 ),
               ],
             ),
-          ),
-          // Divider(
-          //   color: Colors.grey[300],
-          //   thickness: 2,
-          // ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: const[
-                  Text('Appointment Type'),
-                  Text('Neurosurgeon'),
-                ],
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  minimumSize: const Size(130, 30),
-                  // backgroundColor: Colors.green,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(
-                      25,
+            // Divider(
+            //   color: Colors.grey[300],
+            //   thickness: 2,
+            // ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const[
+                    Text('Appointment time'),
+                    Text('12:30 PM'),
+                  ],
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: const Size(130, 30),
+                    // backgroundColor: Colors.green,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                        25,
+                      ),
                     ),
                   ),
+                  child: const Text('Join call'),
                 ),
-                child: const Text('JOIN'),
-              ),
-            ],
-          )
-        ],
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
