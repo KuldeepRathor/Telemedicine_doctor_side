@@ -19,8 +19,26 @@ class _ProfileState extends State<Profile> {
     Size size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: const Color(0xffF3F6F9),
-        body: ProfileAppbar(),
+        //backgroundColor: const Color(0xffF3F6F9),
+        body:
+            Column(
+              children: [
+                Container(
+                  width:double.maxFinite,
+                  color: Colors.blue,
+                  child: Center(
+                    child: Text('Profile',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30),
+
+                    ),
+                  ),
+                ),
+                Expanded(child: ProfileAppbar()),
+              ],
+            )
+
       ),
     );
   }

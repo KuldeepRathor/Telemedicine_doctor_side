@@ -1,11 +1,9 @@
 // ignore_for_file: prefer_const_constructors, unused_import
 
 import 'package:flutter/material.dart';
-import '../components/homepage/available_doctors.dart';
+
 import '../components/homepage/custom_appbar.dart';
-import '../components/homepage/doctor_slider.dart';
-import '../components/homepage/searchbar.dart';
-import '../components/homepage/specialist.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
